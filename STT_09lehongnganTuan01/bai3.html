@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // data 1
+        
+        var dolphins = [96, 108, 89];
+        var koalas = [88, 91, 110];
+        var sumDolphins = dolphins.reduce((a, b) => a + b, 0);
+        var sumKoalas = koalas.reduce((a, b) => a + b, 0);
+        var averageDolphins = sumDolphins / dolphins.length;
+        var averageKoalas = sumKoalas / koalas.length;
+        if (averageDolphins > averageKoalas) {
+            console.log(`Dolphins win (${averageDolphins.toFixed(2)} vs. ${averageKoalas.toFixed(2)})`);
+        } else if (averageDolphins < averageKoalas) {
+            console.log(`Koalas win (${averageKoalas.toFixed(2)} vs. ${averageDolphins.toFixed(2)})`);
+        } else {
+            console.log(`Draw (${averageDolphins.toFixed(2)} vs. ${averageKoalas.toFixed(2)})`);
+        } 
+
+
+        // data bonus 1
+        console.log(`Data bonus 1:`);
+        var dolphins1 = [97, 112, 101];
+        var koalas1 = [109, 95, 123];
+        var sumDolphins1 = dolphins1.reduce((a, b) => a + b, 0);
+        var sumKoalas1 = koalas1.reduce((a, b) => a + b, 0);
+        var averageDolphins1 = sumDolphins1 / dolphins1.length;
+        var averageKoalas1 = sumKoalas1 / koalas1.length;
+        if (averageDolphins1 > averageKoalas1 && averageDolphins1 >= 100) {
+            console.log(`Dolphins win (${averageDolphins1.toFixed(2)} vs. ${averageKoalas1.toFixed(2)})`);
+        } else if (averageDolphins1 < averageKoalas1 && averageKoalas1 >= 100) {
+            console.log(`Koalas win (${averageKoalas1.toFixed(2)} vs ${averageDolphins1.toFixed(2)})`);
+        } else if (averageDolphins1 === averageKoalas1 && averageDolphins1 >= 100 && averageKoalas1 >= 100) {
+            console.log(`Draw (${averageDolphins1.toFixed(2)} vs. ${averageKoalas1.toFixed(2)})`);
+        } else {
+            console.log(`No team wins`);
+        }
+
+
+        // data bonus 2
+        console.log(`Data bonus 2:`);
+        var dolphins2 = [97, 112, 101];
+        var koalas2 = [109, 95, 106];
+        var sumDolphins2 = dolphins2.reduce((a, b) => a + b, 0);
+        var sumKoalas2 = koalas2.reduce((a, b) => a + b, 0);
+        var averageDolphins2 = sumDolphins2 / dolphins2.length;
+        var averageKoalas2 = sumKoalas2 / koalas2.length;
+        if (averageDolphins2 > averageKoalas2 && averageDolphins2 >= 100) {
+            console.log(`Dolphins win (${averageDolphins2.toFixed(2)} vs. ${averageKoalas2.toFixed(2)})`);
+        } else if (averageDolphins2 < averageKoalas2 && averageKoalas2 >= 100) {
+            console.log(`Koalas win (${averageKoalas2.toFixed(2)} vs ${averageDolphins2.toFixed(2)})`);
+        } else if (averageDolphins2 === averageKoalas2 && averageDolphins2 >= 100 && averageKoalas2 >= 100) {
+            console.log(`Draw (${averageDolphins2.toFixed(2)} vs. ${averageKoalas2.toFixed(2)})`);
+        } else {
+            console.log(`No team wins`);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcAverage(a,b,c){
+            return (a+b+c)/3;
+        }
+
+        var avgDolhins = calcAverage(44,23,71);
+        var avgKoalas = calcAverage(65,54,49);
+
+        var avgDolhins1 = calcAverage(85,54,41);
+        var avgKoalas1 = calcAverage(23,34,27);
+
+        function checkWinner(avgDolhins,avgKoalas){
+            var result= avgDolhins >= 2*avgKoalas ? `Dolphins win (${avgDolhins} vs. ${avgKoalas})` : avgKoalas >= 2*avgDolhins ? `Koalas win (${avgKoalas} vs. ${avgDolhins})` : `No team wins`;
+            console.log(result);
+        }
+        checkWinner(avgDolhins,avgKoalas);
+        checkWinner(avgDolhins1,avgKoalas1);
+    </script>
+</body>
+</html>

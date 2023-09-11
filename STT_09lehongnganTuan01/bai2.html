@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //data 1
+        var massMark = 78
+        var heightMark = 1.69
+
+        var massJohn = 92
+        var heightJohn = 1.95
+
+        var markBMI = massMark / (heightMark * heightMark)
+        var johnBMI = massJohn / (heightJohn * heightJohn)
+
+
+        var markHigherBMI = markBMI > johnBMI;
+        if (markHigherBMI)
+            console.log(`Mark has a ${markBMI.toFixed(2)} higher BMI than John ${johnBMI.toFixed(2)}`)
+        else
+            console.log(`John has a ${johnBMI.toFixed(2)} higher BMI than Mark ${markBMI.toFixed(2)}`)
+    </script>
+</body>
+
+</html>
